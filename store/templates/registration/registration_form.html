@@ -6,8 +6,8 @@
 </head>
 <body>
 <form method="post" action=".">
-    {% crf_token %}
-    {{form.asp}}
+    {% csrf_token %}
+    {{form.as_p}}
     <input type="submit" value="Register" />
 </form>
 </body>
