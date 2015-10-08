@@ -109,11 +109,18 @@ REGISTRATION_AUTO_LOGIN = True
 LOGIN_REDIRECT_URL = '/store/'
 
 # Email Backend
+#EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+#EMAIL_HOST = "mail.gilrael.com"
+#EMAIL_HOST_USER = "gil@gilrael.com"
+#EMAIL_PORT = 25
+#EMAIL_USE_TLS = True
+#DEFAULT_FROM_EMAIL = "gil@gilrael.com"
+
+# Email backend setting for work
+
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "mail.gilrael.com"
 EMAIL_HOST_USER = "gil@gilrael.com"
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_PORT = 25
+EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = "gil@gilrael.com"
-
-
