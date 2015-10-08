@@ -136,3 +136,7 @@ EMAIL_HOST_USER = "gil@gilrael.com"
 EMAIL_PORT = 25
 EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = "gil@gilrael.com"
+
+# Facebook Social Auth Settings
+SOCIAL_AUTH_FACEBOOK_KEY = ''
+SOCIAL_AUTH_FACEBOOK_SECRET = ''
