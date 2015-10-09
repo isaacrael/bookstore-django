@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'social.apps.django.app.default',
+    'social.apps.django_app.default',
     'registration',
     'store',
 )
@@ -121,22 +121,22 @@ REGISTRATION_AUTO_LOGIN = True
 LOGIN_REDIRECT_URL = '/store/'
 
 # Email Backend
-#EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-#EMAIL_HOST = "mail.gilrael.com"
-#EMAIL_HOST_USER = "gil@gilrael.com"
-#EMAIL_PORT = 25
-#EMAIL_USE_TLS = True
-#DEFAULT_FROM_EMAIL = "gil@gilrael.com"
-
-# Email backend setting for work
-
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "mail.gilrael.com"
 EMAIL_HOST_USER = "gil@gilrael.com"
 EMAIL_PORT = 25
-EMAIL_USE_SSL = True
+EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = "gil@gilrael.com"
 
+# Email backend setting for work
+
+#EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+#EMAIL_HOST = "mail.gilrael.com"
+#EMAIL_HOST_USER = "gil@gilrael.com"
+#EMAIL_PORT = 25
+#EMAIL_USE_SSL = True
+#DEFAULT_FROM_EMAIL = "gil@gilrael.com"
+
 # Facebook Social Auth Settings
-SOCIAL_AUTH_FACEBOOK_KEY = ''
-SOCIAL_AUTH_FACEBOOK_SECRET = ''
+SOCIAL_AUTH_FACEBOOK_KEY = '1709065619314363'
+SOCIAL_AUTH_FACEBOOK_SECRET = '1468489d01f270bf2f2d7c64d82c709e'
